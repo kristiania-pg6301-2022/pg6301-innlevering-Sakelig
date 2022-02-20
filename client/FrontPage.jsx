@@ -12,7 +12,7 @@ export function FrontPage() {
 
   return (
     <div>
-      <h1>Quiz!</h1>
+      <h1>Quiz 2 !</h1>
       {loading && <div>Loading ...</div>}
       {score && (
         <h3>
