@@ -1,4 +1,5 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import { QuizApplication } from "./QuizApplication";
 
-ReactDOM.render(<h1>Helloodddddoo</h1>, document.getElementById("app"))
+ReactDOM.render(<QuizApplication />, document.getElementById("app"));
