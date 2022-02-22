@@ -6,7 +6,7 @@
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
-    "test": "cd client && npm run test",
+    "test": "cd client && npm run build && npm run test",
     "prepare": "husky install",
     "pre-commit": "npm run prettier:check",
     "prettier": "prettier --write **/*.{js,jsx,ts,tsx}",
