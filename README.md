@@ -1,3 +1,5 @@
+[![Run test](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Sakelig/actions/workflows/test.yml/badge.svg)](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Sakelig/actions/workflows/test.yml)
+
 # pg6301-innlevering-Sakelig
 pg6301-innlevering-Sakelig created by GitHub Classroom
 
@@ -39,7 +41,7 @@ For å få vurdert innleveringen dere løse den med følgende GitHub classroom o
  * [x] Make react app run as expected /w parcel
  * [x] Configure babel so that the react app runs properly with jest and babel
  * [x] Make first passing test
- * [ ] Set up github actions
+ * [x] Set up github actions
  * [ ] Connect coveralls with github actions and make a badge
  * [ ] Get status badge saying tests is passing
  * [ ] Get status badge from coveralls
