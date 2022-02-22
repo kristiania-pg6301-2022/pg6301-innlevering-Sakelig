@@ -37,8 +37,8 @@ For å få vurdert innleveringen dere løse den med følgende GitHub classroom o
  ### Client side
  * [x] Create a react app with parcel
  * [x] Make react app run as expected /w parcel
- * [ ] Configure babel so that the react app runs properly with jest and babel
- * [ ] Make first passing test
+ * [x] Configure babel so that the react app runs properly with jest and babel
+ * [x] Make first passing test
  * [ ] Set up github actions
  * [ ] Connect coveralls with github actions and make a badge
  * [ ] Get status badge saying tests is passing
