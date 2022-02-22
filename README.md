@@ -1,4 +1,4 @@
-[![Run test](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Sakelig/actions/workflows/test.yml/badge.svg)](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Sakelig/actions/workflows/test.yml)
+[![Run test](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Sakelig/actions/workflows/test.yml/badge.svg)](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Sakelig/actions/workflows/test.yml) [![Coverage Status](https://coveralls.io/repos/github/kristiania-pg6301-2022/pg6301-innlevering-Sakelig/badge.svg?branch=main)](https://coveralls.io/github/kristiania-pg6301-2022/pg6301-innlevering-Sakelig?branch=main)
 
 # pg6301-innlevering-Sakelig
 pg6301-innlevering-Sakelig created by GitHub Classroom
@@ -42,10 +42,10 @@ For å få vurdert innleveringen dere løse den med følgende GitHub classroom o
  * [x] Configure babel so that the react app runs properly with jest and babel
  * [x] Make first passing test
  * [x] Set up github actions
- * [ ] Connect coveralls with github actions and make a badge
- * [ ] Get status badge saying tests is passing
- * [ ] Get status badge from coveralls
- * [ ] Let coveralls read tests with jest --coverage
+ * [x] Connect coveralls with github actions and make a badge
+ * [x] Get status badge saying tests is passing
+ * [x] Get status badge from coveralls
+ * [x] Let coveralls read tests with jest --coverage
 
 ### Server side
  * [x] Make server listen to port 3000
@@ -56,3 +56,8 @@ For å få vurdert innleveringen dere løse den med følgende GitHub classroom o
    return true or false
  * [x] Make score stored with cookies
 
+### Other stuff
+
+* [ ] Deploy on Heroku
+* [ ] Place cookie on Heroku
+* [ ] Get 90% test coverage
