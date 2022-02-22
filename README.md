@@ -35,8 +35,8 @@ Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre
 For å få vurdert innleveringen dere løse den med følgende GitHub classroom og alle gruppedeltagerne skal levere link i Canvas: https://classroom.github.com/a/lCmgaF2I (Lenker til en ekstern side.)
 
  ### Client side
- * [ ] Create a react app with parcel
- * [ ] Make react app run as expected /w parcel
+ * [x] Create a react app with parcel
+ * [x] Make react app run as expected /w parcel
  * [ ] Configure babel so that the react app runs properly with jest and babel
  * [ ] Make first passing test
  * [ ] Set up github actions
@@ -46,10 +46,11 @@ For å få vurdert innleveringen dere løse den med følgende GitHub classroom o
  * [ ] Let coveralls read tests with jest --coverage
 
 ### Server side
- * [ ] Make server listen to port 3000
- * [ ] Running express server
- * [ ] Let server serve react app
- * [ ] Fetch questions from /api/question
- * [ ] Make a post request that match the random question from GET and return true or false
- * [ ] Make score stored with cookies
+ * [x] Make server listen to port 3000
+ * [x] Running express server
+ * [x] Let server serve react app
+ * [x] Fetch questions from /api/question
+ * [x] Make a post request that match the random question from GET and 
+   return true or false
+ * [x] Make score stored with cookies
 
