@@ -3,12 +3,19 @@ import { fetchJSON } from "./http";
 import { Link } from "react-router-dom";
 import * as React from "react";
 
-export function FrontPage() {
+export function FrontPage({ quizApi }) {
   const {
     data: score,
     loading,
+    error,
     reload,
-  } = useLoader(async () => fetchJSON("/api/score"));
+  } = useLoader(async () => await quizApi.getScore());
+
+  console.log(score);
+
+  if (error) {
+    return <div>Something went wrong D:</div>;
+  }
 
   return (
     <div>
