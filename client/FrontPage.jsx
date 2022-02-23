@@ -11,8 +11,6 @@ export function FrontPage({ quizApi }) {
     reload,
   } = useLoader(async () => await quizApi.getScore());
 
-  console.log(score);
-
   if (error) {
     return <div>Something went wrong D:</div>;
   }

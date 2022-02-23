@@ -4,7 +4,7 @@ import { FrontPage } from "../FrontPage";
 import { MemoryRouter } from "react-router-dom";
 import { act } from "react-dom/test-utils";
 
-describe("Quiz Application", () => {
+describe("Frontpage", () => {
   it("show unloaded frontpage", () => {
     const getScore = () => new Promise((resolve) => {});
 
@@ -54,7 +54,6 @@ describe("Quiz Application", () => {
         element
       );
     });
-    //expect(element.innerHTML).toMatchSnapshot();
     expect(element.querySelector("div").textContent).toContain(
       "Something went wrong D:"
     );
