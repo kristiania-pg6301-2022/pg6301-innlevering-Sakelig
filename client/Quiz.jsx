@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { fetchJSON, postJSON } from "./http";
+import { useLoader } from "./useLoader";
 
-const Quiz = () => {
+const Quiz = ({ quizApi }) => {
   const [question, setQuestion] = useState("");
   let [answer, setAnswer] = useState("");
   let id = question.id;
@@ -10,13 +11,13 @@ const Quiz = () => {
   const navigate = useNavigate();
 
   useEffect(async () => {
-    setQuestion(await fetchJSON("/api/question"));
+    setQuestion(await quizApi.getQuestion());
   }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const data = await postJSON("/api/question", { id, answer });
+    const data = await quizApi.postAnswer({ id, answer });
 
     if (data.result === true) {
       navigate("/answer/correct");
