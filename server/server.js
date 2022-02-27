@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import path from "path";
 import dotenv from "dotenv";
 import { isCorrectAnswer, Questions, randomQuestion } from "./questions.js";
+import { quizApp } from "./quizApp.js";
 dotenv.config();
 
 const app = express();
@@ -15,37 +16,11 @@ app.use(
   })
 );
 
-app.get("/api/question", (req, res, next) => {
-  const { id, category, question, answers } = randomQuestion();
-  res.json({ id, category, question, answers });
-});
+app.use("/api", quizApp);
 
-app.post("/api/question", (req, res, next) => {
-  const { id, answer } = req.body;
-  const question = Questions.find((q) => q.id === id);
-  if (!question) {
-    return res.sendStatus(404);
-  }
-  const score = req.signedCookies.score
-    ? JSON.parse(req.signedCookies.score)
-    : { answers: 0, correct: 0 };
-  score.answers += 1;
-  if (isCorrectAnswer(question, answer)) {
-    score.correct += 1;
-    res.cookie("score", JSON.stringify(score), { signed: true });
-    res.json({ result: true });
-  } else {
-    res.cookie("score", JSON.stringify(score), { signed: true });
-    res.json({ result: false });
-  }
-});
-
-app.get("/api/score", (req, res, next) => {
-  const score = req.signedCookies.score
-    ? JSON.parse(req.signedCookies.score)
-    : { answers: 0, correct: 0 };
-  res.send(score);
-});
+/*
+ removed stuff
+ */
 
 app.use(express.static("../client/dist"));
 
