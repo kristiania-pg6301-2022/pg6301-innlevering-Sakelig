@@ -58,6 +58,13 @@ For å få vurdert innleveringen dere løse den med følgende GitHub classroom o
 
 ### Other stuff
 
-* [ ] Deploy on Heroku
-* [ ] Place cookie on Heroku
+* [x] Deploy on Heroku - Link to deployed version on heroku: https://pg6301-innlevering-steffan.herokuapp.com/
+* [x] Place cookie on Heroku
 * [ ] Get 90% test coverage
+
+
+### Comments:
+
+- Not sure how to fix coveralls, but heard from others it was maybe not gonna be needed for exam (?)
+- Getting 90% test coverage was kinda hard, or rather stumbled on testing routing sites and not sites that shows stuff themself + backend
+
