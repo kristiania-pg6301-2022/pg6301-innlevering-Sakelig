@@ -8,7 +8,7 @@ import { quizApp } from "./quizApp.js";
 dotenv.config();
 
 const app = express();
-app.use(cookieParser("test secret"));
+app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
