@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { fetchJSON, postJSON } from "./http";
-import { useLoader } from "./useLoader";
 
 const Quiz = ({ quizApi }) => {
   const [question, setQuestion] = useState("");
