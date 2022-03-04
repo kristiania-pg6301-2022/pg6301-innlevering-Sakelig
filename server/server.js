@@ -3,7 +3,6 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import path from "path";
 import dotenv from "dotenv";
-import { isCorrectAnswer, Questions, randomQuestion } from "./questions.js";
 import { quizApp } from "./quizApp.js";
 dotenv.config();
 
@@ -17,10 +16,6 @@ app.use(
 );
 
 app.use("/api", quizApp);
-
-/*
- removed stuff
- */
 
 app.use(express.static("../client/dist"));
 
