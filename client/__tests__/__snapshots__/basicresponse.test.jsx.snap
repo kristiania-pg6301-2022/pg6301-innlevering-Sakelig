@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicresponsePage should show true answer page 1`] = `"<div><h1>Det var rikitg!</h1><a href=\\"/question\\"> nytt spørmål</a><br><a href=\\"/\\"> back home</a></div>"`;
+
+exports[`BasicresponsePage should show wrong answer page 1`] = `"<div><h1>Det var feil!</h1><a href=\\"/question\\"> nytt spørmål</a><br><a href=\\"/\\"> back home</a></div>"`;
