@@ -66,6 +66,6 @@ For å få vurdert innleveringen dere løse den med følgende GitHub classroom o
 
 ### Comments:
 
-- Not sure how to fix coveralls, but heard from others it was maybe not gonna be needed for exam (?)
+- Not sure how to fix coveralls for frontend and backend tests, but heard from others it was maybe not gonna be needed for exam (?)
 - Getting 90% test coverage was kinda hard, or rather stumbled on testing routing sites and not sites that shows stuff themself + backend
 
