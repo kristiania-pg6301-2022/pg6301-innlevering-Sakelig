@@ -36,6 +36,7 @@ Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre
 
 For å få vurdert innleveringen dere løse den med følgende GitHub classroom og alle gruppedeltagerne skal levere link i Canvas: https://classroom.github.com/a/lCmgaF2I (Lenker til en ekstern side.)
 
+
  ### Client side
  * [x] Create a react app with parcel
  * [x] Make react app run as expected /w parcel
